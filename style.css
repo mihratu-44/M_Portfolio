@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #101820;
+    color: #f1f5f9;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #172630;
+    padding: 18px 7%;
+    border-bottom: 1px solid #30434e;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav a {
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.desktop-nav a:hover {
+    color: #00d6c9;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.welcome {
+    color: #00d6c9;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #00d6c9;
+}
+
+.hero h2 {
+    font-size: 25px;
+    color: #b5c2cc;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    color: #b5c2cc;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: teal;
+    border-color: teal;
+}
+
+.btn-primary:hover {
+    background-color: #006666;
+    border-color: #006666;
+}
+
+.profile-image {
+    flex: 0 0 320px;
+    height: 320px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00d6c9;
+    box-shadow: 0 0 30px rgba(0, 214, 201, 0.2);
+}
+
+.section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    color: #00d6c9;
+}
+
+.section-description {
+    color: #b5c2cc;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.about-card {
+    background-color: #192833;
+    padding: 35px;
+    border-radius: 12px;
+    border-left: 4px solid #00d6c9;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.about-card h3 {
+    color: #00d6c9;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    color: #b5c2cc;
+}
+
+.skill-card {
+    background-color: #192833;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #30434e;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #00d6c9;
+}
+
+.skill-card h3 {
+    color: #00d6c9;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    color: #b5c2cc;
+    margin-bottom: 0;
+}
+
+.project-card {
+    background-color: #192833;
+    padding: 35px;
+    border-radius: 12px;
+    height: 100%;
+    border: 1px solid #30434e;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #00d6c9;
+}
+
+.project-number {
+    color: #00d6c9;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.project-card p {
+    color: #b5c2cc;
+}
+
+.project-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.project-tags span {
+    background-color: #25424b;
+    color: #00d6c9;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.contact-card {
+    background-color: #192833;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.contact-card p {
+    color: #b5c2cc;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    background-color: teal;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #00d6c9;
+    color: #101820;
+}
+
+.footer {
+    background-color: #172630;
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 1px solid #30434e;
+}
+
+.footer p {
+    color: #b5c2cc;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 720px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: relative;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        padding: 8px;
+        list-style: none;
+    }
+
+    .menu-bar::-webkit-details-marker {
+        display: none;
+    }
+
+    .menu-bar::marker {
+        content: "";
+    }
+
+    .menu-bar span {
+        width: 28px;
+        height: 3px;
+        background-color: #00d6c9;
+        border-radius: 5px;
+    }
+
+    .mobile-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+        background-color: #192833;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        width: 180px;
+        border: 1px solid #30434e;
+        border-radius: 8px;
+        z-index: 1000;
+    }
+
+    .mobile-menu:hover .mobile-links,
+    .mobile-menu[open] .mobile-links,
+    .mobile-menu:focus-within .mobile-links {
+        display: flex;
+    }
+
+    .mobile-links a {
+        color: white;
+    }
+
+    .mobile-links a:hover {
+        color: #00d6c9;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 35px;
+        padding-top: 50px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .profile-image {
+        flex: none;
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .section {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
